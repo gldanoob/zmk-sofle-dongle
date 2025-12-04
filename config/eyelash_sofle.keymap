@@ -83,7 +83,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
             label = "*w*";
         };
     };
