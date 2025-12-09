@@ -71,7 +71,7 @@
             >;
 
             display-name = "OwO";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp PERIOD SLASH>;
         };
 
         L2 {
