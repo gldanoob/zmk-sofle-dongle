@@ -151,25 +151,25 @@ text.footer {
 }
 
 /* styling for combo tap, and key non-tap label text */
-text.combo, text.hold, text.shifted, text.left, text.right {
+text.combo, text.hold, text.shifted, text.left, text.right, text.tl, text.tr, text.bl, text.br {
     font-size: 11px;
 }
 
-text.hold {
+text.hold, text.bl, text.br {
     text-anchor: middle;
     dominant-baseline: auto;
 }
 
-text.shifted {
+text.shifted, text.tl, text.tr {
     text-anchor: middle;
     dominant-baseline: hanging;
 }
 
-text.left {
+text.left, text.tl, text.bl {
     text-anchor: start;
 }
 
-text.right {
+text.right, text.tr, text.br {
     text-anchor: end;
 }
 
@@ -631,6 +631,11 @@ rect.held, rect.combo.held {
 <a href="#w">
 <text x="0" y="-4" class="key tap layer-activator">*w*</text>
 </a></g>
+<g class="combo combopos-0">
+<path d="M103,161 l-13,45" class="combo"/>
+<rect rx="6" ry="6" x="89" y="148" width="28" height="26" class="combo"/>
+<text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-OwO">
@@ -959,6 +964,11 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:arrow-right-bold" xlink:href="#mdi:arrow-right-bold" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:arrow-right-bold"/>
+</g>
+<g class="combo combopos-0">
+<path d="M103,161 l-13,45" class="combo"/>
+<rect rx="6" ry="6" x="89" y="148" width="28" height="26" class="combo"/>
+<text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 </g>
 </g>
@@ -1289,6 +1299,11 @@ rect.held, rect.combo.held {
 <g transform="translate(784, 259)" class="key held keypos-63">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
+</g>
+<g class="combo combopos-0">
+<path d="M103,161 l-13,45" class="combo"/>
+<rect rx="6" ry="6" x="89" y="148" width="28" height="26" class="combo"/>
+<text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 </g>
 </g>
